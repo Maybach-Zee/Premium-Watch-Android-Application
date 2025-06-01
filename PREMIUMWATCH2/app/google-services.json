@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585098036444",
+    "project_id": "premium-watch",
+    "storage_bucket": "premium-watch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585098036444:android:6cb64a1c55cb4e0a01e019",
+        "android_client_info": {
+          "package_name": "com.example.premiumwatch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWuvuPrpbmjNz105eL71Kit5TEXXBUSNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

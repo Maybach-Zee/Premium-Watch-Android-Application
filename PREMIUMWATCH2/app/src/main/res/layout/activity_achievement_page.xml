@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AchievementPage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AchievementPage">
+
+        <TextView
+            android:id="@+id/starterAchievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starter: Not Achieved"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/collectorAchievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collector: Not Achieved"
+            android:layout_below="@id/starterAchievement"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/packratAchievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Packrat: Not Achieved"
+            android:layout_below="@id/collectorAchievement"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/packratAchievement"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="0 / 10"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/backtolist"
+            android:layout_width="147dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/progressText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="132dp"
+            android:text="Add List" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconSize="30dp"
+        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
